@@ -1,0 +1,831 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#nav{
+     
+        background: #f0f0f0;
+        /* padding: 1rem 0; */
+        padding-top: 15px;
+        box-shadow: 0 4px 4px 0 #00000040;
+        position: sticky;
+        height: 60px;
+        /* height: calc(var(--sdlms-font-size)*5.625); */
+        top: 0;
+        z-index: 999;
+      
+}
+
+#nav .navbar{
+    display: flex;
+}
+
+#nav .navbar .nav-icons{
+    display: flex;
+    margin-left: 850px;
+    
+}
+
+#nav .logo img{
+    position: relative;
+/* margin-right: var(--sdlms-padding-0-25); */
+width: 280px;
+
+margin-left: 100px;
+}
+
+#nav .nav-icons .home{
+    height: 40px;
+    width: 40px;
+    background-color:#3683F0;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    color: white;
+    font-size: 18px;
+    margin-left: 20px;
+    cursor: pointer;  
+}
+
+#nav .nav-icons .home:hover{
+    scale: 1.1;
+}
+
+#nav .nav-icons .bell{
+    display: flex;
+   
+}
+
+#nav .nav-icons .bell .fa-bell{
+    margin-left: 12px;
+}
+
+#nav .nav-icons .bell .alert{
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: #FF2C55;
+    margin-left: -7px;
+    margin-top: -10px;
+}
+
+#nav .nav-icons .profile img{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    margin-left: 20px;
+    border:1px solid white;
+    cursor: pointer;
+}
+
+#nav .nav-icons .profile img:hover{
+    scale: 1.1;
+}
+
+#nav .nav-icons .dots{
+    margin-left: 20px;
+    margin-top: 5px;
+}
+
+#nav .nav-icons .dots .dot{
+    height: 4.5px;
+    width: 4.5px;
+    border-radius: 50%;
+    background-color:#3683F0;
+    margin-top: 4px;
+}
+
+#nav .nav-icons .dots .dot:hover{
+    scale: 1.5;
+}
+
+/* -------Nav Section End------ */
+
+
+
+/* --------Right Collapse Section------- */
+#collapse{
+    height: 692px;
+    width: 392px;
+    top: 76px;
+    position: fixed;
+    background-color: white;
+    left: -320px;
+    box-shadow:0 4px 4px 0 #00000040;
+    border-radius: 20px;
+    transition: 0.25s;
+    z-index: 500;
+}
+
+#collapse .collapse-head{
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    border-top-right-radius: 20px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#collapse .collapse-head p{
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-left: 20px;
+}
+
+#collapse .c-h-icon{
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   margin-right: 20px;
+   cursor: pointer;
+}
+
+#collapse .ch-i{
+    color: black;
+    font-size: 14px;
+    transform: rotate(180deg);
+}
+
+#collapse .collapse-cont h2{
+    font-size: 17px;
+    font-weight: 600;
+    margin-top: 30px;
+    margin-left: 30px;
+}
+
+#collapse .collapse-cont .uli{
+    margin-left: 70px;
+    margin-top: 20px;
+    font-size: 17px;
+    font-weight: 400;
+}
+
+#collapse .collapse-cont .lic{
+    margin-bottom: 4px;
+}
+
+
+/* -----Right Collapse section end---- */
+
+/* -------------------MAIN SECTION----------------- */
+
+
+/* -------Upper Text Section Start------ */
+#text{
+    width: 1110px;
+    height: 150px;
+   
+    margin: auto;
+}
+
+#text .project{
+    font-size: 26px;
+color: #0029ff;
+font-weight: 900;
+margin-top: 15px;
+
+
+}
+
+#text .project-content{
+    margin-top: 27px;
+    height: 100px;
+    width: 1066px;
+    background-color: 
+    #E9ECEF;
+    padding: 20px 25px 0px 25px;
+}
+
+#text .project-content .content-text{
+    width: 1012px;
+
+}
+
+
+
+#text .project-content p{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 21px;
+    margin-top: 10px;
+    font-weight: 400;
+
+
+}
+
+#text .project-content h1{
+    font-size: 20px;
+    font-weight: 700;
+}
+
+
+/* ----------Upper Text Section End------- */
+
+
+
+
+
+/* ----------------Notice Board part start---------- */
+
+#notice{
+    height: 390px;
+    width: 80px;
+    position: fixed;
+    top: 100px;
+    right: -40px;
+    /* background-color: orange; */
+    box-shadow:0 4px 4px 0 #00000040;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+    color: white;
+    transition: 0.1s;
+   
+}
+
+#notice .cross{
+    display: flex;
+    justify-content: center;
+    font-size: 30px;
+    padding-top: 15px;
+}
+
+#notice .cross .fa-xmark{
+    display: none;
+    cursor: pointer;
+}
+
+#notice .cross .fa-plus{
+    display: block;
+    cursor: pointer;
+}
+
+#notice .notice-board{
+    width: 50%;
+    height: 100%;
+    background-color: black;
+    border-top-left-radius: 30px;
+    border-bottom-left-radius: 30px;
+}
+
+#notice .note{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+
+
+/* -----------------Notice Board part End------------ */
+
+
+
+/* ==============Container Section Start============ */
+
+#container{
+    /* height: 2500px;
+    background-color: red; */
+    width: 1020px;
+    margin: auto;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    position: relative;
+}
+
+#container .container-row-one{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    position: relative;
+}
+
+#container .global{
+    height: 580px;
+    width: 480px;
+    border-radius: 15px;
+    box-shadow:0 4px 4px 0 #00000040;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: relative;
+}
+
+#container .global::-webkit-scrollbar {
+    width: 0.01em;
+    background-color: transparent;
+}
+
+#container .global .container-head{
+    background-color: black;
+    height: 50px;
+    width: 100%;
+   border-top-left-radius: 15px;
+   border-top-right-radius: 15px;
+   color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+
+#container .sticky{
+    position: sticky;
+    top: 0;
+    z-index: 200;
+}
+
+#container .global .container-head .c-h{
+    font-size: 17px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: auto;
+   
+}
+
+#container .global .c-h-icon{
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+   align-items: center;
+   margin-right: 20px;
+   cursor: pointer;
+}
+
+#container .global .ch-i{
+    color: black;
+    font-size: 10px;    
+}
+
+
+#container .global .description{
+    width: 100%;
+    height: 84px;
+    border-bottom: 1px solid #00000040;
+    display: flex;
+ background-color: white;
+    align-items: center;
+    font-size: 14px;
+    letter-spacing: 0.5px;
+    line-height: 21px;
+    font-weight: 500;
+    transition: 1s;
+   
+   
+}
+
+#container .global .description .des-cont{
+    margin-left: 20px;
+}
+
+#container .global .description b{
+    font-weight:800;
+    font-size: 15px;
+}
+
+/* --------Container One------ */
+/* -------Container One end---- */
+
+
+
+/* -----Container two------- */
+#container .container-two .thread{
+    width: 100%;
+    height: 40px;
+    background-color: #FEFFC033;
+    border-bottom: 1px solid #00000040;
+    display: flex;
+align-items: center;
+}
+
+#container .container-two .thread .icon-thread{
+    margin-left: 25px;
+}
+
+#container .container-two .thread .thread-text{
+    margin-left: 165px;
+}
+
+#container .two-cont{
+    display: flex;
+}
+
+#container .two-cont-a{
+    /* width: 200px; */
+    margin-left: 20px;
+    margin-top: 30px;
+}
+
+#container .input-one-head{
+width: 200px;
+height: 45px;
+background-color: rgba(0,0,0,.05);
+border-top-left-radius: 20px;
+border-top-right-radius: 20px;
+font-size: 12px;
+font-weight: 400;
+letter-spacing: 0.5px;
+padding-top: 5px;
+padding-left: 10px;
+ 
+}
+
+
+
+#container .input-one .text-one{
+   
+    height: 70px;
+    width: 198px;
+    border-radius: 20px;
+    border: none;
+    box-shadow:0 4px 4px 0 #00000040;
+    padding-top: 10px;
+    padding-left: 10px;
+    margin-top: -25px;
+    font-weight: 400;
+    font-size: 14px;
+    color: #6C757D;
+    
+}
+#container .input-one .text-one:focus{
+    outline: none;
+}
+
+#container .two-cont-a .t-c-icon{
+    display: flex;
+    justify-content: end;
+    margin-right: 10px;
+    margin-top: 15px;
+    font-size: 20px;
+}
+
+#container .two-cont-a .t-c-icon .fa-solid{
+    margin-left: 4.5px;
+    margin-right: 4.5px;
+    cursor: pointer;
+
+}
+
+#container .two-cont-a .t-c-icon .fa-solid:hover{
+    color: #3683F0;
+}
+
+#container .select{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 7px;
+    margin-right: 7px;
+    margin-top: 10px;
+}
+
+#container .mySelect{
+    width: 96px;
+    height: 32px;
+    padding-left: 7px;
+    background-color: white;
+    border: none;
+    box-shadow: 0 0 5px 0 #00000040;
+    font-size: 10px;
+    border-radius: 8px;
+
+}
+
+ .button{
+    width: 97px;
+    height: 36px;
+    background-color: #0029FF;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    margin-left: 20px;
+    margin-top: 30px;
+    border-radius: 10px;
+}
+
+#container .box-two-content .button .fa-solid{
+    margin-right: 7px;
+}
+
+#container .fourth{
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+#container .fourth .input-one-head{
+    width: 435px;
+}
+
+#container .fourth .input-one .text-one{
+    width: 433px;
+ 
+}
+
+#container .fifth{
+    display: flex;
+    margin-left: 20px;
+    margin-top: 27px;
+    margin-right: 20px;
+    justify-content: space-between;
+}
+
+#container .fifth .fi-a{
+    display: flex;
+    
+    justify-content: space-between;
+    width: 115px;
+    font-size: 13px;
+}
+
+#container .fifth .asd{
+    width: 120px;
+    font-size: 13px;
+}
+
+#container .box-two-content .aaaa{
+   float: right;
+   margin-right: 20px;
+   width: 120px;
+   font-size: 14px;
+}
+
+#container .fifth .fi-a .fa-pen-to-square{
+    color: #0029ff;
+}
+/* -----Container two end------ */
+
+
+
+
+
+
+/* =========-----Container Three-----============ */
+#container .container-three-content{
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-right: 20px;
+}
+
+#container .container-three-content .three-cont-a{
+    margin-right: 10px;
+}
+#container .container-three-content .t-t{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+#container .container-three-content .t-i{
+    margin-top: 10px;
+    width: 100%;
+    height: 38px;
+    font-size: 16px;
+    border: none;
+    box-shadow: 0 0 5px 0 #00000040;
+    padding-left: 10px;
+  
+}
+
+#container .container-three-content .t-i:focus{
+    outline: none;
+}
+
+#container .container-three-content .three-cont-b{
+    margin-top: 20px;
+}
+
+#container .container-three-content .three-cont-c{
+    width: 100%;
+    height: 75px;
+    box-shadow: 0 0 5px 0 #00000040;
+    margin-top: 15px;
+}
+
+#container .container-three-content .three-cont-c .line-a{
+       margin-left: 8px;
+       padding-top: 10px;
+}
+
+#container .container-three-content .line-a span{
+font-size: 14px;
+margin-left: 8px;
+color: #616161;
+cursor: pointer;
+}
+
+#container .container-three-content .line-a span:hover{
+    background-color: #cce2fa; 
+}
+
+#container .container-three-content .three-cont-c .line-b{
+    display: flex;
+    margin-left: 6px;
+    margin-top: 15px;
+    color: #616161;
+}
+
+#container .container-three-content .three-cont-c .line-b .icon-a{
+  width: 22px;
+  height: 20px;
+  
+  margin-left: 8px;
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #616161;
+  cursor: pointer;
+}
+#container .three-cont-c .line-b .icon-select{
+    width: 102px;
+    background-color:#EBEBEB;
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    align-items: center;
+    margin-left: 19px;
+}
+
+#container .three-cont-c .line-b .icon-select .fa-solid{
+   
+    margin-right: 7px;
+    font-size: 11px;
+}
+#container .three-cont-c .line-b .icon-a:hover{
+    background-color: #cce2fa;
+}
+
+#container .three-cont-d .input-a{
+width: 100%;
+height: 250px;
+border: none;
+box-shadow: 0 0 5px 0 #00000040;
+margin-bottom: 30px;
+font-size: 16px;
+}
+
+#container .three-cont-d .input-a:focus{
+    outline: none; 
+}
+
+#container .three-cont-e{
+    display: flex;
+    justify-content: space-between;
+}
+
+#container .three-cont-e .asd{
+    width: 190px;
+    font-size: 14px;
+    margin-bottom: 15px;
+}
+
+#container .three-cont-e .title{
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+#container .three-cont-e .thumb{
+    width: 190px;
+    height: 32px;
+   display: flex;
+   border: 1px solid rgb(153, 148, 148);
+}
+
+#container .three-cont-e .thumb .t-a{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#container .three-cont-e .thumb .t-b{
+    width: 70px;
+    background-color: #b4b3b3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#container .three-cont-f{
+    display: flex;
+    margin-left: 150px;
+    margin-bottom: 30px;
+
+}
+
+#container .three-cont-f .fa-solid{
+    margin-right: 15px;
+}
+
+#container .three-cont-f .pp{
+    width: 120px;
+    font-size: 14px;
+}
+/* ========----Container Three End----=========== */
+
+
+/* -----Container Four----- */
+
+#container .container-four-content{
+    margin-left: 20px;
+   margin-right: 20px;   
+}
+
+#container .container-four-content .four-cont-a{
+    width: 100%;
+    height: 40px;
+    background-color: #F2F2F2;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+}
+
+#container .container-four-content .four-cont-a .fa-solid{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#container .container-four-content .four-cont-b{
+    height: 100px;
+    width: 100%;
+   
+}
+
+#container .container-four-content .four-cont-b .b-a{
+    margin-left: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+#container .four-cont-b .b-b{
+   margin-left: 320px;
+   margin-top: 15px;
+}
+
+#container .container-four-content .part-one .four-cont-a{
+    background-color:white;
+    border-top: 2px solid #F2F2F2;
+    border-bottom: 2px solid #F2F2F2;
+}
+
+#container .container-four-content .part-two .four-cont-a{
+    background-color: white;
+    border: 1px solid #F2F2F2;
+    margin-left: 30px;
+   width: 90%;
+   margin-top: 10px;
+   font-weight: 400;
+   padding-left: 10px;
+}
+
+#container .container-four-content .b-b span{
+    cursor: pointer;
+}
+
+#container .container-four-content .b-b span:hover{
+    color: #0029ff;
+    border-bottom: 1px solid #0029ff;
+}
+/* -----Container Four end---- */
+
+
+/* ============Container Part End================= */
+
+.last_icon{
+    position: fixed;
+    right: 5px;
+    bottom: 20px;
+}
+
+.last-icon{
+    height: 65px;
+    width: 65px;
+    background-color: #0029ff;
+    border-radius: 50%;
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 24px;
+font-weight: 600;
+cursor: pointer;
+
+}
+
+.button{
+    cursor: pointer;
+    margin-bottom: 15px;
+}
